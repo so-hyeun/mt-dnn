@@ -8,9 +8,9 @@ from mt_dnn.loss import LossCriterion
 
 class TaskDefs:
     def __init__(self, task_def_path):
-        self._task_def_dic = yaml.safe_load(open(task_def_path))
+        self._task_def_dic = yaml.safe_load(open(task_def_path)) #yaml 파일을 딕셔너리 형태로 바꿈 (task.yml파일)
         global_map = {}
-        n_class_map = {}
+        n_class_map = {} #n_class: 
         data_type_map = {}
         task_type_map = {}
         metric_meta_map = {}
